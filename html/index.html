@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<LINK href="style.css" rel="stylesheet" type="text/css">
+	<LINK href="stylesheet.css" rel="stylesheet" type="text/css">
+
+	<style type="text/css">
+		body{
+			font-family: 'tofufontregular';
+		}
+	</style>
+	<link rel="icon" href="img/TofuIcon_64x64.ico">
+	
+	<title>TofuFont</title>
+
+	<script type="text/javascript">
+		/* switch TofuFont active(tofunize). */
+		window.onload = function()
+		{
+			if( 1 < window.location.search.length )
+			{
+				var body = document.getElementById("myBody");
+				body.style.fontFamily = "serif,sans-serif";
+			}
+		};
+	</script>
+</head>
+
+<body id="myBody">
+<div id="my_header">
+	<div id="header_image">
+	<h1 style="font-size: 40px;" class="white_outline">
+		Tofoフォント - Mojibake for your Design - 
+	</h1>
+	</div>
+</div>
+<hr>
+
+<p style="text-align: center;">
+	<strong style="color: #000000;">
+	<span style="font-size: 24px; font-family: sans-serif;">
+		あなたの意図に反して、このページが読めているでしょうか？</br>
+		<!-- Reading this instead of the website you expected?</br> -->
+	</span>
+	</strong>
+</p>
+</br>
+
+<div style="font-family:sans-serif; float:right; background-color:#e5f6f6; padding:10px;">
+	<span style="font-size: 24px;">>> このページが文字化けする場合はこちらへ！</span></br>
+	<div style="font-family: sans-serif; float: left">
+		<a href="index.html">Japanese_1 (Tofulize)</a></br>
+		<a href="index.html?tofu=false">Japanese_2 (Not Tofulize)</a></br>
+		<a href="index_en_US.html">English?_1 (Tofulize)</a></br>
+		<a href="index_en_US.html?tofu=false">English?_2 (Not Tofulize)</a></br>
+	</div>
+</div>
+<div style="clear: both;"></div>
+</br>
+
+あなたがこのページを問題なく読めるならば、あなたのブラウザはWeb標準への準拠に問題がある可能性があります。</br>
+(問題がない可能性もあります。)</br>
+あなたのブラウザが<span><strong>IE6</strong></span>であることに対して、
+我々あるいはマイクロソフトにできることは何もありません。</br>
+あなたのシステム管理者に問い合わせてください。</br>
+</br>
+
+<span style="font-family:serif;">release: 2015/04/01</span></br>
+License: BSD License class-2</br>
+developer: <a href="https://daisy-bell.booth.pm/">project daisy bell</a> 2015/Michinari Nukazawa</br>
+</br>
+
+
+<div id="my_contents">
+
+<h2>イントロダクション</h2>
+<strong>あなたのWebデザインに、レトロWebサイトの懐かしいTofuを！</strong></br>
+</br>
+TofoFontは
+<a href="https://daisy-bell.booth.pm/">project daisy bell</a>
+による完全オリジナル日本語フリーフォントです。</br>
+商用可。</br>
+収録文字数は約0xFFF0個(約65500個)くらいです。(真面目に数えていない)</br>
+日本語対応版は、たぶんUnicode1.0.1のCJK互換漢字を完全収録し、CJK統合漢字拡張A集合まで収録しています。
+(真面目にチェックしていない)</br>
+英数字版はWebフォント化にも対応しています。<br/>
+</br>
+
+<h2>Tofuとは？</h2>
+Tofuとは、Webブラウザを含むPC画面上で、文字が表現者の意図したように表示され判読困難となる現象を指す「文字化け」のうち、正常でない文字表示がすべて四角い箱のように見える(代替文字が表示される)現象の、日本語文化圏での呼び方です。</br>
+ラテン・アルファベット文化圏の外ではありがちだった現象であり、逆にコンピュータ開発の中心地であるラテン・アルファベット文化圏ではまず起こらない現象であったため、欧米側に日本語から「Mojibake/Tofu」の呼び方が逆輸入された、珍しいコンピュータ用語でもあります。</br>
+</br>
+インターネット幕開け時代、日本のWeb上では、他の言語圏にない出来事として、Tofu現象が見られただけではありませんでした。文字化けと言語障壁により守られた日本Web界隈の中では、外では見られない独自文化が次々と花開いていきました。</br>
+愛生会病院・キリ番ゲット・匿名掲示板・会員制日記サービス・MARQUEEするテキストを動画に重ねて表示できる動画共有サイト、などです</br>
+</br>
+
+<h2>Tofuと文字コード</h2>
+<blockquote>
+「『文字コード（もじコード）はコンピュータ上で文字（キャラクタ (コンピュータ)）を利用するために各文字に割り当てられるバイト表現。もしくは、バイト表現と文字の対応関係』と、Wikipediaに書いてある」</br>
+	-- 
+	<a href="http://www.amazon.co.jp/gp/product/B002DOALBE/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B002DOALBE&linkCode=as2&tag=michinarinuka-22">
+		よくわかる現代魔法 SPECIAL CODE ALBUM
+	</a> より</br>
+	-- 
+	<a href="http://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89">
+		Wikipedia
+	</a> より</br>
+</blockquote>
+</br>
+Tofuの来歴を知るには、コンピュータそのものの歴史を少し紐解く必要があります。</br>
+初期のコンピュータは、アメリカを中心とした英語圏で開発されていました。</br>
+初期のコンピュータ設計者とユーザは、ラテン・アルファベット文字と少数の記号があればすべての言葉を書き記すことができたため、ASCIIコード以上の文字コードを必要としませんでした。</br>
+そして、1byte固定長のASCIIコードは初期のコンピュータにとって好ましい性質を多く持っていたため、長らく英語圏のシステムエンジニアが、非ラテン・アルファベット環境のことを考慮していませんでした。</br>
+もちろん、かな漢字が表示できなければ日本では売れません。商業化の都合で、その国しのぎで他国との交換を考えていない文字コードが各国で作られていきました。作ったのは主にマイクロソフトとIBMですが、現状を彼らのせいにすることはできません。</br>
+日本語を表す文字コードだけでも、EUC-JP/Shift-JIS(そしてCP932という方言)があり、一つではありませんでした。</br>
+その後Unicodeが登場し、すべてがUTF-8に統一され、Web世界に平和が訪れたのでした。おしまい。</br>
+...とはなりませんでした。実際は、UTF-8(BOM)/UTF-8(BOMなし)により、日本語を表すことのできる文字コードは5つに増えました。</br>
+</br>
+
+<h2>我々の愛したインターネットエクスプローラ</h2>
+<blockquote>
+IE6は腐った牛乳</br>
+	-- Microsoft広報</br>
+</blockquote>
+悪名高きマイクロソフトの歴史の中で、特に不当に貶められているのが、InternetExplorer６、通称IE6です。</br>
+
+IE6は長きに渡って(もしかしたら現在も)、Office2003のイルカ(スーツを着てPCの前に座り、上司の作った文法のおかしいドキュメントを修正する仕事をしているユーザに、一瞬の安らぎを与えてくれる愛らしいマスコットキャラクター)と並ぶ、マイクロソフトの主力製品です。</br>
+IE6は、以下のあらゆる競合ブラウザに、常に打ち勝ってきました。</br>
+</br>
+
+・Netscape:</br>
+ ブラウザという市場をゼロから築き上げた。(そしてマイクロソフトに奪われた。)</br>
+・Opera:</br>
+ 独自のエンジンを持っていた。最近Webkitに切り替えたが。(ねえ、そんなにWebKitがいいんだったら、<strong>1945年の最初から</strong>Webkitベースでブラウザを作ればよかったんじゃない？)</br>
+・LunaScape:</br>
+ ダウンロードしてきてインストールすると使えるようになる<strong>IE</strong>。あるいはIE6の起動用ランチャーその1。
+・FireFox:</br>
+ <a href="https://addons.mozilla.jp/firefox/details/35">IE6の起動用ランチャー</a>その2。</br>
+・IE7:</br>
+ Web標準にも<strong>IE6にも</strong>準拠していない独自ブラウザで、あの競合潰しで有名なマイクロソフトがIE6からシェアを奪うためにリリースしたが、IE6という強豪を潰し、熱心なビジネスユーザを奪うことがついにできなかった。</br>
+</br>
+IE6がこれらに打ち勝ってきた理由のひとつは、その優れた機能です。</br>
+・VBスクリプト:</br>
+ そもそもの動作環境をIE6に環境を固定することで、IE6以外で動かないと嘆く、スラド読みでトレッキーなギークによるサービスへの苦情や彼らによる気まぐれなSQLインジェクションチェックによるセキュリティリスクを抑えることができる。</br>
+・JavaScriptの独自拡張:</br>
+ 動作環境をIE6に固定することで(ry</br>
+・ActiveX:</br>
+ マイクロソフトによるリモートPCログイン認証プロトコル。面倒なリモートPCの設定をしなくても、世界中のPCに遠隔ログイン可能になるという革新的新機能だった。ちなみに、Webブラウザ上で四角を踊らせるといった愉快なオマケ機能がついている。</br>
+・CSSレイアウトの独自拡張：</br>
+ FireFoxをわざわざダウンロードしてきて使うこだわり派のユーザに、IE6とは見た目の異なる画面を見せて<strong>彼らを唸らせる</strong>ために役立つ。<br/>
+</br>
+ちなみに、IE6のブラウザスクリプトには「デフォルトがNoのダイアログを出す」機能をもっていますが、"クールな"HTML5モダンブラウザには<strong>同じ機能が存在しません</strong>。このダイアログがビジネスの上でどれだけ重要であるかは語る気にすらなりませんし、説明する必要もないでしょう。これは、IE6の優れたビジネスユース対応、何より「モダンブラウザ」が未だに追いつくことのできない先進性からくる圧倒的な能力差を表しています。IE6ならば5行のVBScriptコードで実現できていたことを、モダンブラウザではjQueryとjQueryUIを使ってブラウザ画面上に「ダイアログのような何か」を表示することでやっと模倣(エミュレーション)できるのですが、jQueryUIが全体で何行のコードを抱えているのか、数える気にもなれません。しかもそれはVBスクリプトと違い、Yes/Noを受け取るためだけにコールバックメソッドを書く必要があります。</br>
+</br>
+何よりもIE6の優秀さを物語っているのが、『登場後１０幾年、開発元のサポートが切れた後も、熱心なユーザが仕事に使っている』という事実です。</br>
+IE6が今でも熱心に使われているのは、特にミッションクリティカルで更新の難しいシステムです。</br>
+(核ミサイルの発射ボタンもIE6でブラウザ描画しているかもしれません。)</br>
+ビジネスユーザたちはIE6を仕事に使い、命まで預けています。彼らは自分の大事な家族・雇用・給与・福利厚生・年金・老後まで人生のすべてを委ねているのは、FireFoxではなくIE6なのです。もちろん、顧客の個人情報(もちろんあなたの情報が含まれている)やこの国の基幹がIE6の上に存在するであろうことは、疑う余地はありません。</br>
+</br>
+しかしIE6も時代の流れには勝てず、『モダンブラウザ』たちに負けてしまいました。</br>
+モダンブラウザというのは、技術的には、FireFoxとChrome、そしてChromeのコアたるWebKitのガワを置き換えただけのブラウザ(Opera、Safari、Android Browserその他)無数に量産されたパチ物たちのことを指しています。なので実際には『モダンブラウザ』とは、FireFoxとChromeのことを表す言葉です。</br>
+モダンブラウザおよび標準化活動によって、IE6はWebから排除されてしまったのです。</br>
+</br>
+「Webの多様性」をミッションであると標榜するMozillaが次にするべきことは、アルミ削り出しのクールなiPhoneから安価なアンドロイド携帯まで、誰もが作っておりバリエーションも多い「スマートフォン」を新たに作ることではなく、<strike>わたしのアンドロイド2.3スマホでクラッシュしないFireFox</strike> Shift-JISで書かれていながらメタタグに"unicode"と宣言されているWebページや、IE6のようにWeb標準に準拠していない特徴的なブラウザを普及させることで、Webに真の多様性を取り戻すことです。</br>
+(注：IE6互換とは言っていない。)</br>
+</br>
+
+<h2>Googleがすべてを支配する</h2>
+<blockquote>
+Google の使命は、世界中の情報を整理し、世界中の人々がアクセスできて使えるようにすることです。</br>
+	--<a href="https://www.google.com/intl/ja_jp/about/company/">Google会社情報</a></br>
+</blockquote>
+</br>
+Googleは自らの使命を、会社紹介ページの冒頭に大きく掲げています。</br>
+つまり、彼らの目的は <strike>無限に自動生成され続けるNeverまとめ</strike> すべての情報をインデクシングして、誰もが使えるようにすることです。</br>
+</br>
+しかし、全世界のWeb(ただしMixiを除く)をインデクス化によって手中に収めたGoogleサーバに、Web上にありながらも収集できないものがありました。</br>
+それが、非ラテン・アルファベット文化圏に固有のWeb文化と現象、そしてそれらが生む独特の空気感です。</br>
+愛生会病院のあの独特なWebサイト(特別有名なので代表してそう呼んでいるが実際は当時に作られた無数のWebサイト)の雰囲気や、2ゲットされた時の１の悔しさ、キリ番無視もしたくないけれど正直面倒だから踏みたくない的なあの日本Web世界独特の空気感を、Googleボットは収集することができなかったのです。</br>
+Googleがどれだけ多くのMapReduceサーバーを持っていても、HTMLテキストを収集解析するだけでなく画像まで読むことのできるクローラを作っても、Googleの目指す「すべてを記録したインデックス」に収録することは叶いません。</br>
+彼らはGoogle+により、これらをも彼らのサーバに収集すると高らかに宣言しています(※)。しかし、この試みは正直言って上手く行っていません。なぜなら誰もGoogle+を使っていないからです。(ただし、ブラックジョークで有名な米国在住のLinus Torvalds氏はGoogle+を使っているようですが。)</br>
+</br>
+
+<blockquote>
+	※ 以下はその引用です。</br>
+	2011 年 6 月、Google+ プロジェクトを発表しました。そのねらいは、実世界における共有のニュアンスと豊かさをウェブに取り込むこと、
+	そして人、その関係、各自の関心事を取り入れることによって Google のすべてをさらに良いものにすることです。</br>
+	-- <a href="https://www.google.com/intl/ja_jp/about/company/">会社情報/google+</a> より</br>
+</blockquote>
+</br>
+
+そして彼らは決めたのです。文字化け、わけてもTofuをWebから<strong>絶滅させる</strong>ことを。</br>
+Chromeブラウザは、WebからTofuを排除するためにGoogleから遣わされた尖兵でした。世界のブラウザシェアごと掌握することで、彼らは文字コード自動判定を正しく行い、すべてのTofuをWebから駆逐する作業に着手しました。</br>
+当時、Tofuのコア技術たる文字コード自動判定を握っていたのはIEとFireFoxであり、彼らはTofu文化の保全活動を上手くやっていました。文字コードの判定には間違いの発生しうる方法(メタタグを無視して出現頻度に基づく判定エンジン)を使い、文字化けが発生した際にユーザが文字コードの変更を試す機能は、メニューの奥に巧妙に隠されました。</br>
+(文字コード変更UIの隠蔽は、「ユーザが誤って操作」して文字化けされたWebページを見ることがないように、という口実で行われましたが、実際はユーザにTofuへの手出しを諦めさせる効果を持っています。結果として、Tofuによるユーザ体験は強まっていました。)</br>
+(なお、初期のChromeがどちらかというと文字コード判定に<strong>失敗しやすいブラウザ</strong>であったことは、彼らの巧妙な偽装であり、本当の目的を隠すための隠れ蓑となりました。)</br>
+</br>
+そしてGoogleはとうとう、Tofuそのものを絶滅させる本命プロダクトとして、「Noto sans CJK」をリリースしました。</br>
+Googleは、非ラテン・アルファベット文化圏に固有のTofu現象を滅ぼすために、Adobeと共に1万3000文字を超えるCJK対応のフォントを作ったのです。</br>
+Googleはその強い意志を、Notoの命名理由を説明することで、はっきりと示しています。</br>
+<p style="text-align: center;">
+	<strong style="color: #000000;">
+		<span style="font-size: 24px;">
+			「No豆腐」=「Noto」</br>
+		</span>
+	</strong>
+</p>
+Notoという名前は、GoogleがどれだけTofuを敵性文化として危険視しているかを示しています。</br>
+Googleはこのフォントに、「Notoを駆逐するもの」という名前を付けるだけでなく、そのことを全世界へ向けて高らかに宣言しました。</br>
+</br>
+GoogleがTofuを敵視する理由は明確です。</br>
+Googleは、Googleボットに理解不能なWeb上の出来事を根絶やしにすることで、すべてのWebサイトがGoogleボットにクローリング可能な状態に均一化された世界を創りだそうとしているのです。</br>
+Tofuは、Googleにとってまさに滅ぼすべき存在なのです。</br>
+</br>
+<h2>TofuFont -すべての人々にTofuを-</h2>
+日本語圏Web文化は、Tofu現象と共に長い期間を過ごしてきました。文字化けはすでに、日本語Web界隈の一部になっています。</br>
+Googleの意向がどうであれ、わたしたちは広くTofuの保護を訴え、後世に伝えていかなければなりません</br>
+</br>
+TofuFontは、主要なブラウザ・OS環境でTofuを再現するために作成されたフォントです。</br>
+どんなWebページ・コンテンツであっても、TofuFontを使えば、手軽にTofu状態を再現することができます。</br>
+Tofu現象を再現するためだけに、IE6がインストールされたXP仮想マシンや、メタタグとHTMLテキストの文字コードが絶妙に食い違ったWebページを用意するなど、面倒な方法で文字化け現象を起こす必要はありません。Tofuを紹介・利用し広めるために必要なものは、今やTofuFontだけです。</br>
+</br>
+何よりすばらしいのは、TofuFontに収録されている豊富な漢字字形は、すべてがTofuFontオリジナルのデザインであるという事実です。</br>
+日本語フォントを作ることには、莫大な労力がかかります。理由は単純で、約1万3000文字の漢字をひとつずつデザインする必要があるからです。すべての漢字に優れたデザインを与えることは難しく、MicroSoftやGoogle/Adobeのような世界的大企業を除けば、日本でそれを実現しているのはほんの数社のみです。</br>
+TofuFontは、これまでの日本語フリーフォントにはなかった新しい手法によって、コンセプトレベルでの高いデザイン統一性を実現しています。</br>
+</br>
+我々は、GoogleによるWeb均一化に抵抗し、Webに真の多様性を取り戻さなければなりません。</br>
+ぜひあなたのデザインにTofuを活用し、日本のクールなWeb1.0時代を後世に伝えてください。</br>
+</br>
+<h2>Donwload links</h2>
+<a href="http://sourceforge.jp/projects/daisybell-fonts/">Download TofuFont! from "daisy bell" official page.</a>[SourceForge]</br>
+<a href="https://github.com/MichinariNukazawa/TofuFont/">Join TofuFont! and get build system.</a>[GitHub]</br>
+</br>
+
+</div>
+
+<div id="my_footer">
+	<h2>免責事項</h2>
+	このTofuFontのリリース日は4/1であり、つまりそういうことです。</br>
+	エイプリルフールです。</br>
+	TofuFontのライセンス(BSD class-2/商用可)以外のあらゆる内容はネタです。</br>
+	つまり、完全なフィクションであり、あらゆる事実やわたし個人の意見とは無関係です。</br>
+	もしこの文章が個人攻撃のように見えたり、あるいはあなたの心情を害するようであれば、それは単にわたしにジョークセンスが無かったためであり、特に攻撃の意図はなかったことをここに明記させていただくと共に、深く謝罪いたします。</br>
+<br/>
+TofuFontは、"イラストレータ100年の生産性"を目標に掲げる
+<a href="https://daisy-bell.booth.pm/">project daisy bell</a>
+によるフォント製品です。<br/>
+
+
+	<hr>
+	Powered by project "daisy bell"</br>
+	すべてのクリエイターに、100年の生産性を</br>
+</div>
+
+</body>
+</html>

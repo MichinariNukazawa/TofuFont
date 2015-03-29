@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+	body {
+		/* font-family: "TofuFont", Regular; */
+		background-image: url(img/tile01.png);
+		background-repeat: repeat;
+	}
+	
+	blockquote{
+		 background-color:#eeeeee;
+		 border:1px solid #999999;
+		 padding:5px;
+	}
+	h1:before {
+		content: url("img/TofuIcon_100x100.png");
+	}
+	h2{
+		font-size: 40px;
+	}
+	h2:before {
+		content: url("img/TofuIconC_64x64.png");
+	}
+	
+	.white_outline{
+		text-shadow: white 1px 1px 0px, white -1px 1px 0px,
+			white 1px -1px 0px, white -1px -1px 0px;
+	}
+	
+	#my_body { position : relative ; }
+	/*#my_navigation { float : left ; width : 50px ; }*/
+	#my_contents {
+		margin-left: 20px;
+		background-color: #e0e0aa;
+		background-color: rgba(100,100,255, 0.2);
+	}
+	#my_header {
+		width : 100% ;
+		height: 200px;		
+	}
+	#header_image{
+		width: 1500px;
+		height: 100%;
+		background-image: url("./img/title.jpg");
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: cover !important;
+	}
+	#my_footer { width : 100% ; clear : both ; }
+	

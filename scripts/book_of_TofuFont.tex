@@ -1,0 +1,25 @@
+% Manual build for TofuFont.
+%
+% author: Michinari Nukazawa / project daisy bell
+% License: BSD class-2
+% usage: pdflatex book_of_TofuFont.tex
+%
+% memo: force quit is "x" or "\stop"
+%
+
+\documentclass[flegn]{article}
+\usepackage{pdfpages}
+
+\begin{document}
+\includepdf[pages=-]{./docs/book/TitleCover.pdf}
+%\includepdf[pages=-]{./docs/book/AssignList.pdf}
+
+\includepdf[pages=-]{./docs/book/TofuFont.pdf}
+
+\includepdf[pages=-]{./docs/book/Install.pdf}
+%\includepdf[pages=-]{./docs/book/Used.pdf}
+\includepdf[pages=-]{./docs/book/Colophon.pdf}
+\includepdf[pages=-]{./docs/book/BackCover.pdf}
+\end{document}
+
+

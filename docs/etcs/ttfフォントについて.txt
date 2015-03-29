@@ -1,0 +1,6 @@
+".ttf"フォントファイルは、.otfフォントが使用できない一部の環境で使用するために付属しているものです。
+理由がないならば、.otfフォントを使用してください。
+
+Michinari Nukazawa / daisy bell 2014
+mail: michinari.nukazawa@gmail.com
+
