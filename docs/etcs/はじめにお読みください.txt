@@ -13,6 +13,15 @@ Windows/MacOSX/Linuxの場合、フォントファイルをダブルクリックすることで、インスト
 イラストアプリケーション上でのフォントの使用方法は、各アプリケーションの公式のマニュアル・Webサイトなどをご覧ください。
 
 
+
+## 更新履歴
+# 2015/04/01: リリース(v0.22)
+# 2015/04/01: アップデート(v0.23) 
+ 収録グリフに"tofu on fire"(Emoji "NAME BADGE"/0x1F4DB)が含まれていなかった問題を修正
+ (日本版/英語版<strong>それぞれ</strong>対応)
+
+
+
 不明な点があれば、メールなどにて対応いたします。
  メールアドレス： michinari.nukazawa@gmail.com
  Twitter: https://twitter.com/MNukazawa

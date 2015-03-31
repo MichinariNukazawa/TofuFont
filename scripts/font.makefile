@@ -6,7 +6,7 @@
 #
 
 FontName=TofuFont
-Version=0.22
+Version=0.23
 FontFile=./releases/$(FontName)_$(Version).otf
 BookFile=./releases/book_of_$(FontName).pdf
 ZipFile=$(FontName)_$(Version).zip

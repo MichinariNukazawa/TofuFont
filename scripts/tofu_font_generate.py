@@ -125,6 +125,14 @@ def main():
 	font.createChar(ucSrc)
 	font[ucSrc].importOutlines(pathTofuSvg)
 
+	## "tofu on fire" (NAME BADGE/0x1F4DB)
+	if "_en" == fontnameSub:
+		font.createChar(0x1F4DB)
+		font[0x1F4DB].importOutlines("./FontSources/TofuFont/1F4DB_en.svg")	
+	else:
+		font.createChar(0x1F4DB)
+		font[0x1F4DB].importOutlines("./FontSources/TofuFont/1F4DB.svg")
+
 	# 大文字を小文字に(リファレンス)コピーする
 	# en_US
 	copyReferenceOfRange(font, ucSrc, 0x0001, 0x00FF)
