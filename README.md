@@ -9,7 +9,7 @@ Japanese:[ToufFont][ghpages_index_TofuFont]
 English:[TofuFont][ghpages_index_TofuFont_en_US]  
 
 ## License
-BSD class-2 License.  
+BSD 2-Clause License.  
 
 ## Download Font File
 [donwload fonts][daisy_bell_pixiv_booth](pixiv booth)  
