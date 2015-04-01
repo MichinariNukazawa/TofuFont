@@ -1,1 +1,1 @@
-BSD Class-2
+BSD 2-Clause
