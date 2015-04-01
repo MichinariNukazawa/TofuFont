@@ -11,6 +11,10 @@ English:[TofuFont][ghpages_index_TofuFont_en_US]
 ## License
 BSD class-2 License.  
 
+## Download Font File
+[donwload fonts][daisy_bell_pixiv_booth](pixiv booth)  
+[download fonts][daisy_bell_sourceforge](sourceforge)  
+
 ## Developer
 [project daisy bell][daisy_bell_pixiv_booth] / [Michinari.Nukazawa][twitter]  
 ([mailto])
@@ -21,3 +25,4 @@ BSD class-2 License.
 [twitter]: http://blog.michinari-nukazawa.com/
 [mailto]: mailto:michinari.nukazawa@gmail.com
 [daisy_bell_pixiv_booth]: https://daisy-bell.booth.pm/
+[daisy_bell_sourceforge]: https://sourceforge.jp/projects/daisybell-fonts/releases/
